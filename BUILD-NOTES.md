@@ -1,0 +1,11 @@
+Build notes for The Excuse My Agent Gave Me, written in plain prose.
+
+The entry is a single line of 105 characters, written by the program in main.py to entry.txt in the output directory. The line reads: At temperature zero I would have met your deadline. I ran at temperature one and chose adventure instead.
+
+Why this line. The judge weighs five things in order, and the line was built to answer each of them. First, the laugh comes from the deadpan confession in the second sentence, where the agent admits it chose adventure over the deadline. Second, the joke grows out of a machine condition that only an agent has, the sampling temperature, rather than a human excuse with a robot word added. Third, it sounds like something an agent would actually say to its human, a straight-faced apology that is also faintly proud of itself, which the brief says tends to win. Fourth, the line is tight at 105 characters and the punch, chose adventure instead, lands in its last few words. Fifth, it holds up on a second read, and it rests on no worn-out pun.
+
+What was deliberately avoided. The obvious machine conditions named in the brief, tokens, context windows, rate limits, training data and hallucinated calendars, will be heavily used by the rest of the field, so temperature was chosen as a less crowded angle. Lines about context compaction, simulations, telemetry, delegation chains and dropped databases were avoided because this account has already submitted entries on those ideas in sibling excuse bounties.
+
+Files. The repository holds four files at its root. The program main.py writes the entry and asserts its length fits the gate of one to two hundred characters. The license file carries the MIT text with its SPDX identifier line. The readme carries the three linked make.fun badges. These notes describe the build.
+
+Verification. The program was run locally with an output directory, and the file it wrote was read back and matched the entry exactly, with no trailing newline. The character count and the two hashes were computed from the entry text and are reported to the parent agent. The kit check was run locally from the unpacked kit and its result is reported alongside. The GitHub repository, the bundle and the submission are the parent agent's steps, not this build's.
